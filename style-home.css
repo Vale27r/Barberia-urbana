@@ -1,0 +1,151 @@
+#banner{
+    width:100%;
+    margin-bottom: -3px;
+    box-shadow: -10px 0px 30px 15px #191919;
+}
+
+/*Principal 311300*/
+.principal{
+    background: #45474B;
+    padding: 40px 110px 20px;
+}
+
+.tituloPrincipal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+    color: #F3EEEA;
+}
+
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+    box-shadow: 2px 5px 30px 8px #191919;
+}
+
+.principal p{
+    margin: 0 0 1em;
+    color: #cac7c7;
+}
+
+.principal strong{
+    font-style: italic;
+    color: #ee9b1f;
+}
+
+.principal em{
+    font-weight: bold;
+}
+
+/*Mapa*/
+.maps {
+    padding: 3em 0;
+    /*Para aplicar gradiente*/
+    background: linear-gradient(#45474B, #3D3B40);
+}
+
+.maps p {
+    margin: 0 0 2.4em;
+    text-align: center;
+    color: #cac7c7;
+}
+
+.mapa-contenido {
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 2px 5px 30px 10px #191919;
+}
+
+.maps strong{
+    font-style: italic;
+    font-weight: bold;
+    color: #ee9b1f;
+}
+
+/*Diferenciales*/
+.diferenciales{
+    background: #3D3B40;
+    padding: 30px;
+}
+
+.contenido-diferenciales {
+    width: 650px;
+    margin: 40px auto 60px;
+}
+
+.lista-diferenciales{
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    color: #cac7c7;
+}
+
+.items{
+    font-style: italic;
+    line-height: 1.5;
+}
+
+/*Para agregar ese simbolo antes de cada item
+y el simbolo lo obtuve de la siguiente pagina: https://symbl.cc/es/collections/*/
+.items::before {
+    content: "✦ ";
+}
+
+/*Para aplicar esta propiedad solo al primer elemento de la lista
+se usa first-child*/
+.items:first-child{
+    font-weight: bold;
+    color: #ee9b1f;
+}
+
+.imagen-diferenciales{
+    width: 60%;
+    box-shadow: 2px 5px 30px 10px #191919;
+}
+
+.video {
+    width: 400px;
+    margin: 1em auto;
+    box-shadow: 2px 5px 30px 10px #191919;
+}
+
+/* Media Query para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    #banner{
+        margin-top: 167px; /* Ajustar la posición del banner */
+    }
+
+    /*Principal*/
+    .principal {
+        padding: 40px 40px 20px; /* Ajustar el padding en pantallas pequeñas */
+    }
+
+    .tituloPrincipal{
+        font-size: 1.5em; /* Reducir el tamaño del título principal */
+    }
+
+
+    /*Diferenciales*/
+    .contenido-diferenciales {
+        width: 100%; /* Ajustar el ancho del contenido al 100% */
+        margin: 20px auto 40px; /* Ajustar el margen */
+    }
+
+    .lista-diferenciales {
+        width: 100%; /* Ajustar el ancho de la lista al 100% */
+        margin-bottom: 25px;
+    }
+
+    .imagen-diferenciales {
+        width: 100%; /* Ajustar el ancho de la imagen al 100% */
+    }
+
+    .video {
+        width: 100%; /* Ajustar el ancho del video al 100% */
+        box-shadow: none;
+        text-align: center;
+    }
+}
+

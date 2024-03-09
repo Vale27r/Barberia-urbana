@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <!--El archivo de reseteo debe ir antes que mis estilos para que no los borre.
+    (Para resetear los estilos que el navegador crea por defecto)-->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Style-contact.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="caja-header">
+            <h1><img class="logo" src="imagenes/logou.png" alt="logo de la Barbería"></h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <div class="menu-hamburguesa">
+                    <i class="fas fa-bars"></i> <!-- Icono de menú hamburguesa de Font Awesome -->
+                </div>
+            </nav>
+        </div>
+        <div class="menu-desplegable">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </header>  
+
+    <main>
+        <div class="tabla">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Hora</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>lunes - Viernes</td>
+                        <td>10:00 a.m - 7:00 p.m</td>
+                    </tr>
+                    <tr>
+                        <td>Sábado</td>
+                        <td>8:00 a.m - 12:00 p.m</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <form>
+            <fieldset> <!--Sirve para especificar que todos los elementos que estan dentro de fildset 
+            pertenecen al mismo grupo-->
+                <legend class="form-title">Formulario</legend><!--fieldset usa legend para establecer los titulos-->
+                <label for="nombreApellido">Nombre y Apellido</label>
+                <input type="text" name="nombreApellido" id="nombreApellido" 
+                autocomplete="off" required placeholder="Escribe tu nombre y apellido">
+    
+                <label for="correoElectronico">Correo Electrónico</label>
+                <input type="email" name="correoElectronico" id="correoElectronico" 
+                autocomplete="off" required placeholder="usuario@dominio.com">
+    
+                <label for="teléfono">Teléfono</label>
+                <input type="tel" name="teléfono" id="teléfono" 
+                autocomplete="off" required placeholder="xxxx-xxxx">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea name="Mensaje" id="mensaje" cols="70" rows="10" 
+                required placeholder="Escribe tu mensaje"></textarea>
+            </fieldset>
+
+            <div class="input-options">
+                <!--Cree un div para separar los input de radio para que para que el titulo y
+                div input-radio-options quede en forma de columna usando flex-direction: column; en css 
+                ademas para que quedaran todos los input radio en una sola linea le di un display flex a los
+                label del formulario-->
+                <fieldset class="input-radio-options">
+                    <legend class="input-title">¿Cómo te gustaría que te contactemos?</legend>
+                    <!--Para hacer que solo se pueda seleccionar un input se usa name para decir
+                    que los que tenga el mismo name pertenecen al mismo grupo de inputs-->
+                    <label for="radio-email"><input class="radio" type="radio" name="contacto-radio" value="email" id="radio-email">
+                    Email</label>
+                
+                    <label for="radio-telefono"><input class="radio" type="radio" name="contacto-radio" value="telefono" id="radio-telefono">
+                    Teléfono</label>
+                
+                    <label for="radio-whatsapp"><input class="radio" type="radio" name="contacto-radio" value="whatsapp" checked id="radio-whatsapp">
+                    WhatsApp</label>
+                </fieldset>
+
+                <fieldset class="checkbox">
+                    <label class="input-title"><input type="checkbox">¿Te gustaría recibir novedades de la Barbería?</label>
+                </fieldset>
+
+                <fieldset class="multiple-select">
+                    <legend class="input-title">¿En cuál horario prefieres ser atendido?</legend>
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </fieldset>
+            </div>
+
+            <div class="btn">
+                <input type="submit" value="Enviar formulario">
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <img class="logo-footer" src="imagenes/logou.png" alt="logo de la Barbería">
+        <p class="copyright">&copy Copyright barbería -2024</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbería</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-home.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="caja-header">
+            <h1><img class="logo" src="imagenes/logou.png" alt="logo de la Barbería"></h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <div class="menu-hamburguesa">
+                    <i class="fas fa-bars"></i> <!-- Icono de menú hamburguesa de Font Awesome -->
+                </div>
+            </nav>
+        </div>
+        <div class="menu-desplegable">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </header>  
+    <section class="banner">
+        <div>
+            <img id="banner" src="banner/barber-banner.jpg">
+        </div>
+    </section>
+    <!---->
+    <main>
+        <section class="principal">
+
+            <h2 class="tituloPrincipal">Sobre Barbería Urbana</h2>
+
+            <img src="imagenes/utensilios.jpg" alt="utensilios de un barbero." class="utensilios">
+    
+            <p>Ubicada en el corazón de la ciudad, la <strong>Barbería Urbana</strong> trae lo mejor que hay en el mercado para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente.</p>
+    
+            <p id="mision"><em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes"</strong>.</em></p>
+    
+            <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.</p> 
+    
+        </section>
+
+        <section class="maps">
+            <h2 class="tituloPrincipal">Nuestra Ubicación</h2>
+            <p>Nuestro establecimiento esta ubicado en el <strong>corazón</strong> de la ciudad.</p>
+            <div class="mapa-contenido">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.352922735903!2d-89.19384422851842!3d13.697062286689066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6331c27032cde1%3A0x4f51734e0a454227!2sBiblioteca%20Nacional%20de%20El%20Salvador!5e0!3m2!1ses!2ssv!4v1709244395602!5m2!1ses!2ssv" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    
+        <section class="diferenciales">
+    <!--Cosas que diferencia nuestra barbería de las demás-->
+            <h3 class="tituloPrincipal">Diferenciales</h3>
+        
+            <div class="contenido-diferenciales">
+                <!--La lista y la imagen tambien tienen que esta al lado en el html para que esten uno al lado
+                del otro en la pagina al colocarle un display inline-block a la lista-->
+                <ul class="lista-diferenciales">
+                    <li class="items">Atención personalizada a los clientes</li>
+                    <li class="items">Espacio diferenciado</li>
+                    <li class="items">Localización</li>
+                    <li class="items">Profesionales calificados</li>
+                    <li class="items">Puntualidad</li>
+                    <li class="items">Limpieza</li>
+                </ul><img src="diferenciales/diferenciales.jpg" class="imagen-diferenciales">
+            </div>
+
+            <div class="video">
+                <iframe width="400" height="315" src="https://www.youtube.com/embed/GnziZ-WcftE?si=ASZCC0dLFhGtnISO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+    
+        </section>
+    </main>
+    <!---->
+    <footer>
+        <img class="logo-footer" src="imagenes/logou.png" alt="logo de la Barbería">
+        <p class="copyright">&copy Copyright barbería -2024</p>
+    </footer>
+</body>
+</html>

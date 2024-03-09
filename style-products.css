@@ -1,0 +1,70 @@
+/*Tajetas de productos*/
+.main-productos {
+    padding: 70px;
+}
+
+.productos {
+    list-style-type: none;/*elimina los estilos de viñetas o numeración de una lista.*/
+    display: flex;
+    justify-content: center;
+}
+
+.productos li {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /*para agregar sombras a las tarjetas*/
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #fff;
+    transition: transform 0.3s;
+    margin: 0 20px;
+}
+
+/*Estilos que se aplicaran al colocar el mouse sobre una de las tarjetas*/
+.productos li:hover{
+    border: 1px solid #191919;
+    transform: scale(1.05);
+}
+
+.productos li img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.productos li h2 {
+    color: #ee9b1f;
+    margin-top: 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.producto-descripcion {
+    color: #777;
+    font-size: 18px;
+}
+
+.producto-precio {
+    color: #f19407; /* Color del botón */
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Media Query para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .main-productos {
+        margin: 160px auto 0;
+        padding-bottom: 20px;
+    }
+
+    .productos {
+        flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+        align-items: center; /* Centra las tarjetas en el eje horizontal */
+    }
+
+    .productos li {
+        margin-bottom: 50px;
+        width: calc(100% - 125px); /*Para hacer las tajets más pequeñas*/
+    }
+}
